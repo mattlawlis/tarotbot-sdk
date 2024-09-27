@@ -5,8 +5,8 @@ import { Inter } from 'next/font/google';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
-  title: 'OpenAssistantGPT SDK Example',
-  description: 'Example of using OpenAssistantGPT SDK in a Next.js website',
+  title: 'The Tarot Bot',
+  description: 'Receive a tarot card reading, powered by OpenAI',
 };
 
 export default function RootLayout({
