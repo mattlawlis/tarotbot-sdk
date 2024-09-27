@@ -21,7 +21,7 @@ export function SupportInquiry() {
   const [userMessage, setUserMessage] = useState('');
 
   const [inquiryLoading, setInquiryLoading] = useState(false);
-  const [hideInquiry, setHideInquiry] = useState(false);
+  const [hideInquiry, setHideInquiry] = useState(true);
 
   function handleInquirySubmit(e: any) {
     e.preventDefault();
