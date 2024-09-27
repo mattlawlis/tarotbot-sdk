@@ -10,10 +10,10 @@ export default function ChatPage() {
   const [defaultMessage, setDefaultMessage] = useState('');
 
   const chatbot: ChatbotConfig = {
-    id: '12345',
-    name: 'OpenAssistantGPT',
+    id: '1234567',
+    name: 'The Tarot Bot',
 
-    chatTitle: 'Chat with OpenAssistantGPT',
+    chatTitle: '',
     welcomeMessage:
       "Greetings! Would you like a tarot card reading?",
     chatMessagePlaceHolder: 'Send The Tarot Bot a message',
