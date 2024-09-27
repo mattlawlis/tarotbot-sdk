@@ -13,33 +13,32 @@ export default function ChatPage() {
     id: '12345',
     name: 'OpenAssistantGPT',
 
-    chatTitle: 'Chat with OpenAssistantGPT',
+    chatTitle: '',
     welcomeMessage:
-      "Welcome to OpenAssistantGPT! 🚀 I'm your AI assistant, crafted using this platform. How may I assist you today?",
-    chatMessagePlaceHolder: 'Ask us any question...',
+      "Greetings! Would you like a tarot card reading?',
 
     rightToLeftLanguage: false,
 
     bubbleColor: 'linear-gradient(to top left, #003366, #336699)',
     bubbleTextColor: '#FFFFFF',
 
-    chatHeaderBackgroundColor: '#FFFFFF',
-    chatHeaderTextColor: '#52525b',
+    chatHeaderBackgroundColor: '#a3774b',
+    chatHeaderTextColor: '#FFFFFF',
 
     chatbotReplyBackgroundColor: '#e4e4e7',
     chatbotReplyTextColor: '#000000',
 
-    userReplyBackgroundColor: '#e4e4e7',
-    userReplyTextColor: '#000000',
+    userReplyBackgroundColor: '#a3774b',
+    userReplyTextColor: '#FFFFFF',
 
     chatbotLogoURL:
       'https://gwetfkan2dovfoiz.public.blob.vercel-storage.com/search-8jZhOvOBPxuTmohrup5TPvSzrjsyog.png',
     chatInputStyle: 'default',
 
     chatHistoryEnabled: true,
-    chatFileAttachementEnabled: true,
+    chatFileAttachementEnabled: false,
     fontSize: '14px',
-    displayFooterText: true,
+    displayFooterText: false,
     footerLink: 'https://www.openassistantgpt.io',
     footerTextName: 'OpenAssistantGPT',
   };
@@ -66,10 +65,10 @@ export default function ChatPage() {
             className="w-full bg-white"
             variant="outline"
             onClick={() =>
-              setDefaultMessage('How many chatbot can I created on free plan?')
+              setDefaultMessage('May I have a general tarot card reading?')
             }
           >
-            How many chatbot can I created on free plan?
+            May I have a general tarot card reading?
           </Button>
         ),
         count == 0 && (
@@ -77,9 +76,9 @@ export default function ChatPage() {
             key="2"
             className="w-full bg-white"
             variant="outline"
-            onClick={() => setDefaultMessage('How to create a chatbot?')}
+            onClick={() => setDefaultMessage('I would like a love reading.')}
           >
-            How to create a chatbot?
+            I would like a love reading.
           </Button>
         ),
         count == 0 && (
@@ -88,10 +87,10 @@ export default function ChatPage() {
             className="w-full bg-white"
             variant="outline"
             onClick={() =>
-              setDefaultMessage('How to integrate chatbot in website?')
+              setDefaultMessage('Will you give me a prosperity reading?')
             }
           >
-            How to integrate chatbot in website?
+            Will you give me a prosperity reading?
           </Button>
         ),
         count == 0 && (
@@ -99,9 +98,9 @@ export default function ChatPage() {
             key="4"
             className="w-full bg-white"
             variant="outline"
-            onClick={() => setDefaultMessage('What is a SDK?')}
+            onClick={() => setDefaultMessage('I would like a life-path reading.')}
           >
-            What is a SDK?
+            I would like a life-path reading.
           </Button>
         ),
         count > 1 && <SupportInquiry key="5" />,
