@@ -33,7 +33,7 @@ export default function ChatPage() {
     userReplyTextColor: '#FFFFFF',
 
     chatbotLogoURL:
-      'https://gwetfkan2dovfoiz.public.blob.vercel-storage.com/search-8jZhOvOBPxuTmohrup5TPvSzrjsyog.png',
+      'https://thetarot.bot/images/tarot-bot-favicon.png',
     chatInputStyle: 'default',
 
     chatHistoryEnabled: true,
